@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tipografía */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+
+  /* Paleta Terracotta definida en AGENTS.md */
+  --color-terracotta-50: #fdf8f5;
+  --color-terracotta-100: #f9ede3;
+  --color-terracotta-200: #f0d8c4;
+  --color-terracotta-300: #e4ba9d;
+  --color-terracotta-400: #d49a75;
+  --color-terracotta-500: #c9a88e;
+  --color-terracotta-600: #a8896e;
+  --color-terracotta-700: #8a6f5c;
+  --color-terracotta-800: #725a4e;
+  --color-terracotta-900: #5f4c43;
+  --color-terracotta-950: #2f2520;
+
+  /* Animaciones */
+  --animate-fade-in: fadeIn 0.3s ease-out;
+  --animate-slide-up: slideUp 0.3s ease-out;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes slideUp {
+    0% { transform: translateY(10px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}
+
+/* Variantes personalizadas */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Estilos Base y Componentes */
+@layer base {
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 cursor-pointer decoration-0;
+  }
+
+  .card {
+    @apply rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden transition-all duration-200 hover:border-terracotta-500/50 hover:shadow-lg;
+  }
+
+  .img-hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+}

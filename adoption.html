@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adopta un gato">
+    <meta name="author" content="Blog de Gatos">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Adopción de Gatos - Blog Felino</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased">
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-terracotta-500 focus:text-white focus:rounded-md">Saltar
+        al contenido</a>
+
+    <header
+        class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="assets/icons/logo.png" alt="Gatos Blog Logo" class="h-8 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html"
+                        class="text-sm text-gray-600 dark:text-gray-300 hover:text-terracotta-500">Inicio</a>
+                    <a href="gallery.html"
+                        class="text-sm text-gray-600 dark:text-gray-300 hover:text-terracotta-500">Galería</a>
+                    <a href="care.html"
+                        class="text-sm text-gray-600 dark:text-gray-300 hover:text-terracotta-500">Cuidados</a>
+                    <a href="adoption.html" class="text-sm font-medium text-terracotta-500">Adopción</a>
+                    <a href="about.html"
+                        class="text-sm text-gray-600 dark:text-gray-300 hover:text-terracotta-500">Sobre Nosotros</a>
+                </nav>
+                <div class="flex items-center gap-2">
+                    <button id="theme-toggle"
+                        class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                        aria-label="Cambiar modo oscuro">
+                        <svg class="w-5 h-5 text-gray-600 hidden dark:block" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                        <svg class="w-5 h-5 text-gray-600 dark:hidden" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="nav-toggle">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="py-20 md:py-28 hero-section relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/hero_cat.png" alt=""
+                    class="w-full h-full object-cover opacity-10 dark:opacity-20">
+            </div>
+            <div class="container-custom text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl mb-6">Encuentra a tu Compañero Felino</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-lg mx-auto mb-8">Cada gato merece un hogar
+                    amoroso. Encuentra tu compañero perfecto hoy mismo.</p>
+                <div class="flex flex-wrap gap-6 justify-center">
+                    <div>
+                        <div class="text-3xl font-bold text-terracotta-500">50+</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Esperando Hogar</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-terracotta-500">350</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Adoptados 2024</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-terracotta-500">98%</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Tasa de Éxito</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50 dark:bg-gray-800/50">
+            <div class="container-custom text-center">
+                <h2 class="text-2xl md:text-3xl mb-12">Proceso de Adopción</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="space-y-3">
+                        <div
+                            class="w-12 h-12 bg-terracotta-500 text-white rounded-full flex items-center justify-center font-bold mx-auto">
+                            1</div>
+                        <h3 class="font-medium">Explora</h3>
+                        <p class="text-sm text-gray-500">Revisa los perfiles de nuestros gatos disponibles.</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div
+                            class="w-12 h-12 bg-terracotta-500 text-white rounded-full flex items-center justify-center font-bold mx-auto">
+                            2</div>
+                        <h3 class="font-medium">Solicita</h3>
+                        <p class="text-sm text-gray-500">Completa el formulario de pre-adopción.</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div
+                            class="w-12 h-12 bg-terracotta-500 text-white rounded-full flex items-center justify-center font-bold mx-auto">
+                            3</div>
+                        <h3 class="font-medium">Entrevista</h3>
+                        <p class="text-sm text-gray-500">Charlamos para asegurar la mejor compatibilidad.</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div
+                            class="w-12 h-12 bg-terracotta-500 text-white rounded-full flex items-center justify-center font-bold mx-auto">
+                            4</div>
+                        <h3 class="font-medium">¡A Casa!</h3>
+                        <p class="text-sm text-gray-500">Prepara el hogar para tu nuevo mejor amigo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container-custom">
+                <h2 class="text-3xl mb-8 text-center md:text-left">Gatos en Adopción</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="card group">
+                        <div class="aspect-square overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&q=80&w=600"
+                                alt="Luna" class="w-full h-full object-cover img-hover-scale" loading="lazy">
+                            <span
+                                class="absolute top-4 left-4 px-3 py-1 bg-green-500 text-white text-[10px] font-bold uppercase rounded-full tracking-wider shadow-lg">Disponible</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl mb-1 group-hover:text-terracotta-500 transition-colors">Luna</h3>
+                            <div class="flex gap-3 text-xs text-gray-500 mb-4">
+                                <span>🐾 Hembra</span>
+                                <span>📅 2 años</span>
+                                <span>📍 Madrid</span>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Siamesa extremadamente
+                                cariñosa que busca un hogar tranquilo donde recibir mimos.</p>
+                            <button
+                                class="w-full btn bg-terracotta-500 hover:bg-terracotta-600 text-white shadow-md shadow-terracotta-500/20">Conocer
+                                a Luna</button>
+                        </div>
+                    </article>
+                    <article class="card group">
+                        <div class="aspect-square overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&q=80&w=600"
+                                alt="Max" class="w-full h-full object-cover img-hover-scale" loading="lazy">
+                            <span
+                                class="absolute top-4 left-4 px-3 py-1 bg-green-500 text-white text-[10px] font-bold uppercase rounded-full tracking-wider shadow-lg">Disponible</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl mb-1 group-hover:text-terracotta-500 transition-colors">Max</h3>
+                            <div class="flex gap-3 text-xs text-gray-500 mb-4">
+                                <span>🐾 Macho</span>
+                                <span>📅 6 meses</span>
+                                <span>📍 Barcelona</span>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Un pequeño terremoto
+                                lleno de energía. Perfecto para familias activas o con otros gatos.</p>
+                            <button
+                                class="w-full btn bg-terracotta-500 hover:bg-terracotta-600 text-white shadow-md shadow-terracotta-500/20">Conocer
+                                a Max</button>
+                        </div>
+                    </article>
+                    <article class="card group">
+                        <div class="aspect-square overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1516750484197-6b28d10c91ea?auto=format&fit=crop&q=80&w=600"
+                                alt="Simba" class="w-full h-full object-cover img-hover-scale" loading="lazy">
+                            <span
+                                class="absolute top-4 left-4 px-3 py-1 bg-green-500 text-white text-[10px] font-bold uppercase rounded-full tracking-wider shadow-lg">Disponible</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl mb-1 group-hover:text-terracotta-500 transition-colors">Simba</h3>
+                            <div class="flex gap-3 text-xs text-gray-500 mb-4">
+                                <span>🐾 Macho</span>
+                                <span>📅 8 años</span>
+                                <span>📍 Sevilla</span>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Gato senior sabio y
+                                tranquilo. Solo necesita un sofá cómodo y mucho amor.</p>
+                            <button
+                                class="w-full btn bg-terracotta-500 hover:bg-terracotta-600 text-white shadow-md shadow-terracotta-500/20">Conocer
+                                a Simba</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center mt-12">
+                    <button
+                        class="btn border border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 hover:border-terracotta-500 hover:text-terracotta-500 px-8">Cargar
+                        Más Gatos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50 dark:bg-gray-800/50">
+            <div class="container-custom">
+                <h2 class="text-2xl md:text-3xl mb-8 text-center">¿Preparado para adoptar?</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
+                        <h3 class="text-lg mb-4 text-terracotta-500 font-bold">Requisitos</h3>
+                        <ul class="text-sm text-gray-500 space-y-3">
+                            <li>• Ser mayor de edad (+18)</li>
+                            <li>• Contrato de adopción</li>
+                            <li>• Protección en ventanas</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
+                        <h3 class="text-lg mb-4 text-terracotta-500 font-bold">Compromiso</h3>
+                        <ul class="text-sm text-gray-500 space-y-3">
+                            <li>• Seguimiento veterinario</li>
+                            <li>• Amor de por vida</li>
+                            <li>• Espacio adecuado</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
+                        <h3 class="text-lg mb-4 text-terracotta-500 font-bold">Donación</h3>
+                        <ul class="text-sm text-gray-500 space-y-3">
+                            <li>• Cubre gastos médicos</li>
+                            <li>• Ayuda a otros gatos</li>
+                            <li>• Varía según la protectora</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-gray-100 dark:border-gray-800 text-center">
+        <div class="container-custom">
+            <p class="text-sm text-gray-500">© 2026 Gatos Blog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden fixed inset-0 bg-white dark:bg-gray-950 z-[100] pt-20 px-6 overflow-y-auto animate-fade-in"
+        id="mobile-menu">
+        <div
+            class="absolute top-0 left-0 w-full p-4 flex justify-between items-center border-b border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-950">
+            <img src="assets/icons/logo.png" alt="Logo" class="h-6 w-auto">
+            <button class="p-2 text-gray-700 dark:text-gray-300" id="mobile-menu-close" aria-label="Cerrar menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-2 mt-8" role="navigation">
+            <a href="index.html"
+                class="text-2xl font-semibold py-5 border-b border-gray-50 dark:border-gray-900 flex items-center justify-between group">
+                <span>Inicio</span>
+                <svg class="w-5 h-5 text-terracotta-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="gallery.html"
+                class="text-2xl font-semibold py-5 border-b border-gray-50 dark:border-gray-900 flex items-center justify-between group">
+                <span>Galería</span>
+                <svg class="w-5 h-5 text-terracotta-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="care.html"
+                class="text-2xl font-semibold py-5 border-b border-gray-50 dark:border-gray-900 flex items-center justify-between group">
+                <span>Cuidados</span>
+                <svg class="w-5 h-5 text-terracotta-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="adoption.html"
+                class="text-2xl font-semibold py-5 border-b border-gray-50 dark:border-gray-900 flex items-center justify-between group text-terracotta-500">
+                <span>Adopción</span>
+                <svg class="w-5 h-5 text-terracotta-500 opacity-100" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <a href="about.html" class="text-2xl font-semibold py-5 flex items-center justify-between group">
+                <span>Sobre Nosotros</span>
+                <svg class="w-5 h-5 text-terracotta-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </nav>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
